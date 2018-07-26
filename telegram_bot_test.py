@@ -33,4 +33,6 @@ def webhook():
 
 if __name__ == "__main__":
     my_port = int(os.environ.get('PORT', 5000))
+    bot.send_message("343143713", "I was deployed on the port {}".format(my_port))
+    print(my_port)
     server.run(host="0.0.0.0", port=my_port)
